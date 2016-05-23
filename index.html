@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="SuggestionBox">
+  <head>
+    <meta charset="utf-8">
+    <title>Suggestion Box</title>
+
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css" />-->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+  </head>
+  <body ng-controller="HomeController">
+
+    <h1>Suggest Box</h1>
+
+    <ng-view></ng-view>
+
+
+
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/PostController.js"></script>
+    <script src="js/controllers/LoginController.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/suggests.js"></script>
+    <script src="js/services/loginService.js"></script>
+  </body>
+</html>
